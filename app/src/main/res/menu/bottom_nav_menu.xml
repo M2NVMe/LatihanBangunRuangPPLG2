@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Bangun Datar"
+        android:id="@+id/d2"
+        android:icon="@drawable/baseline_crop_square_24"
+        />
+    <item android:title="Bangun Ruang"
+        android:id="@+id/d3"
+        android:icon="@drawable/baseline_3d_rotation_24"
+        />
+    <item android:title="Profile"
+        android:id="@+id/prof"
+        android:icon="@drawable/baseline_person_24"/>
+</menu>
