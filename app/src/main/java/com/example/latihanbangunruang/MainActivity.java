@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Login.setOnClickListener(new View.OnClickListener() {
-            String Nama = "Bumi";
-            String PWS = "123";
+            String Nama = "m2sjmail@gmail.com";
+            String PWS = "Bagus";
             @Override
             public void onClick(View view) {
                 if (Username.getText().toString().equals(Nama) && PW.getText().toString().equals(PWS)) {

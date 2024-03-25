@@ -17,7 +17,7 @@ public class utama extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityUtamaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new ProfileFragment());
+        replaceFragment(new d2Fragment());
         binding.bottomNavigationView.setOnItemReselectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.d2) {
