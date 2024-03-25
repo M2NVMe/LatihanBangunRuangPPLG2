@@ -1,4 +1,4 @@
-package com.example.latihanbangunruang;
+package com.example.latihanbangunruang.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.latihanbangunruang.MainActivity;
+import com.example.latihanbangunruang.R;
 
 public class ProfileFragment extends Fragment {
     Button lgot;

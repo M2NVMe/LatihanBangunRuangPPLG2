@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.latihanbangunruang.Fragments.ProfileFragment;
+import com.example.latihanbangunruang.Fragments.d2Fragment;
+import com.example.latihanbangunruang.Fragments.d3Fragment;
 import com.example.latihanbangunruang.databinding.ActivityUtamaBinding;
 
 public class utama extends AppCompatActivity {
