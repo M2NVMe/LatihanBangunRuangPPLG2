@@ -12,12 +12,13 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText Username,PW;
-    Button Login;
+    Button Login, RGR;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Username = findViewById(R.id.txtUSR);
+        RGR = findViewById(R.id.btnRGR);
         PW = findViewById(R.id.txtPW);
         Login = findViewById(R.id.btnLGN);
 
@@ -33,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(MainActivity.this, "Login Gagal!", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+        RGR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Belom ada bro, nanti dulu", Toast.LENGTH_LONG).show();
             }
         });
     }
