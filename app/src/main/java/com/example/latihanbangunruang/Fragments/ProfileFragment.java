@@ -25,9 +25,10 @@ public class ProfileFragment extends Fragment {
         lgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                getActivity().finishAffinity();
                 Intent intent = new  Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
-                getActivity().finish();
             }
         });
         return RootView;
