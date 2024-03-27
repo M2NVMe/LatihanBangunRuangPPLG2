@@ -3,9 +3,9 @@ package com.example.latihanbangunruang.recycl;
 public class ItemsMe {
 
     String nama;
-    String img;
+    int img;
 
-    public ItemsMe(String name, String imeg) {
+    public ItemsMe(String name, int imeg) {
         nama = name;
         img = imeg;
     }
@@ -18,11 +18,11 @@ public class ItemsMe {
         this.nama = nama;
     }
 
-    public String getImg() {
+    public int getImg() {
         return img;
     }
 
-    public void setImg(String img) {
+    public void setImg(int img) {
         this.img = img;
     }
 }

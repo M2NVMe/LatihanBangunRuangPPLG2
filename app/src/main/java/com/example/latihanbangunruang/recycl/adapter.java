@@ -1,10 +1,16 @@
 package com.example.latihanbangunruang.recycl;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.example.latihanbangunruang.R;
 
 import java.util.List;
 
@@ -24,16 +30,24 @@ public class adapter extends RecyclerView.Adapter<vwhld> {
     @NonNull
     @Override
     public vwhld onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        return new vwhld(LayoutInflater.from(context).inflate(R.layout.recycle_layout_dyna,parent, false));
+
     }
 
     @Override
-    public void onBindViewHolder(@NonNull vwhld holder, int position) {
-
+    public void onBindViewHolder(@NonNull vwhld holder, @SuppressLint("RecyclerView") int position) {
+        holder.name.setText(items.get(position).getNama());
+        holder.ImVW.setImageResource(items.get(position).getImg());
+        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectListen.OnKlik(items.get(position));
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return items.size();
     }
 }
