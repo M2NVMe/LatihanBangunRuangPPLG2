@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.latihanbangunruang.Activity2D.lingkaran;
 import com.example.latihanbangunruang.Activity2D.persegi;
 import com.example.latihanbangunruang.Activity2D.persegipanjang;
 import com.example.latihanbangunruang.Activity2D.segitiga;
@@ -59,7 +60,8 @@ public class d2Fragment extends Fragment implements SelectListen {
             Intent ps2 = new Intent(getActivity(), segitiga.class);
             startActivity(ps2);
         } else if (nama.equals("Lingkaran")) {
-
+            Intent ps3 = new Intent(getActivity(), lingkaran.class);
+            startActivity(ps3);
         } else if (nama.equals("Persegi panjang")) {
             Intent ps4 = new Intent(getActivity(), persegipanjang.class);
             startActivity(ps4);
