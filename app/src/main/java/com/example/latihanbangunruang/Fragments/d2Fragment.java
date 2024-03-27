@@ -1,5 +1,6 @@
 package com.example.latihanbangunruang.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.latihanbangunruang.Activity2D.persegi;
+import com.example.latihanbangunruang.Activity2D.segitiga;
 import com.example.latihanbangunruang.R;
 import com.example.latihanbangunruang.recycl.ItemsMe;
 import com.example.latihanbangunruang.recycl.SelectListen;
@@ -47,15 +50,16 @@ public class d2Fragment extends Fragment implements SelectListen {
     @Override
     public void OnKlik(ItemsMe holding) {
         String nama = holding.getNama();
-        Toast.makeText(getActivity(), nama, Toast.LENGTH_SHORT).show();
 
-        if (nama == "Persegi") {
-            Toast.makeText(getActivity(), "obj1", Toast.LENGTH_SHORT).show();
-        } else if (nama == "Segitiga" ) {
-            Toast.makeText(getActivity(), "obj2", Toast.LENGTH_SHORT).show();
-        } else if (nama == "Jajar genjang") {
+        if (nama.equals("Persegi")) {
+            Intent ps1 = new Intent(getActivity(), persegi.class);
+            startActivity(ps1);
+        } else if (nama.equals("Segitiga")) {
+            Intent ps2 = new Intent(getActivity(), segitiga.class);
+            startActivity(ps2);
+        } else if (nama.equals("Jajar genjang")) {
             Toast.makeText(getActivity(), "obj3", Toast.LENGTH_SHORT).show();
-        } else if (nama == "Persegi panjang") {
+        } else if (nama.equals("Persegi panjang")) {
             Toast.makeText(getActivity(), "obj4", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(getActivity(), "dni", Toast.LENGTH_SHORT).show();
