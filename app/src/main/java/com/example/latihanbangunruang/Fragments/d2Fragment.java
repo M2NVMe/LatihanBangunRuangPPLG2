@@ -39,7 +39,7 @@ public class d2Fragment extends Fragment implements SelectListen {
 
         shape.add( new ItemsMe("Persegi", R.drawable.baseline_crop_square_24));
         shape.add( new ItemsMe("Segitiga", R.drawable.baseline_crop_square_24));
-        shape.add( new ItemsMe("Jajar genjang", R.drawable.baseline_crop_square_24));
+        shape.add( new ItemsMe("Lingkaran", R.drawable.baseline_crop_square_24));
         shape.add( new ItemsMe("Persegi panjang", R.drawable.baseline_crop_square_24));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -58,13 +58,13 @@ public class d2Fragment extends Fragment implements SelectListen {
         } else if (nama.equals("Segitiga")) {
             Intent ps2 = new Intent(getActivity(), segitiga.class);
             startActivity(ps2);
-        } else if (nama.equals("Jajar genjang")) {
-            Intent ps3 = new Intent(getActivity(), persegipanjang.class);
-            startActivity(ps3);
+        } else if (nama.equals("Lingkaran")) {
+
         } else if (nama.equals("Persegi panjang")) {
-            Toast.makeText(getActivity(), "obj4", Toast.LENGTH_SHORT).show();
+            Intent ps4 = new Intent(getActivity(), persegipanjang.class);
+            startActivity(ps4);
         } else {
-            Toast.makeText(getActivity(), "dni", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "INVALID", Toast.LENGTH_SHORT).show();
         }
 
     }

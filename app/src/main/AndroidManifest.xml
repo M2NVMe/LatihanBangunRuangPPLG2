@@ -15,6 +15,9 @@
         android:theme="@style/Theme.LatihanBangunRuang"
         tools:targetApi="31">
         <activity
+            android:name=".Activity2D.lingkaran"
+            android:exported="false" />
+        <activity
             android:name=".Activity2D.persegipanjang"
             android:exported="false" />
         <activity
