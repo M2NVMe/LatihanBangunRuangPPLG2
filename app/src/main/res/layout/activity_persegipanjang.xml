@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity2D.segitiga">
+    tools:context=".Activity2D.persegipanjang">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,9 +21,9 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="19dp"
             android:layout_margin="10dp"
-            android:text="Menghitung luas segitiga"
+            android:text="Menghitung luas persegi panjang"
             />
     </LinearLayout>
 
@@ -39,8 +39,8 @@
         android:text="Masukkan data yang akan di hitung"
         />
     <EditText
-        android:id="@+id/alas"
-        android:hint="masukkan alas"
+        android:id="@+id/panjang"
+        android:hint="masukkan panjang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -50,12 +50,12 @@
         android:layout_marginHorizontal="40dp"
         />
     <EditText
-        android:id="@+id/tinggi"
-        android:hint="masukkan tinggi"
+        android:id="@+id/lebar"
+        android:hint="masukkan lebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/alas"
+        app:layout_constraintTop_toBottomOf="@id/panjang"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="40dp"
@@ -65,7 +65,7 @@
         android:layout_width="wrap_content"
         android:text="Hitung"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tinggi"
+        app:layout_constraintTop_toBottomOf="@id/lebar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="30dp"

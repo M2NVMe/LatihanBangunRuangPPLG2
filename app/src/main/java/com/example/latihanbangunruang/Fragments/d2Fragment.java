@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.latihanbangunruang.Activity2D.persegi;
+import com.example.latihanbangunruang.Activity2D.persegipanjang;
 import com.example.latihanbangunruang.Activity2D.segitiga;
 import com.example.latihanbangunruang.R;
 import com.example.latihanbangunruang.recycl.ItemsMe;
@@ -58,7 +59,8 @@ public class d2Fragment extends Fragment implements SelectListen {
             Intent ps2 = new Intent(getActivity(), segitiga.class);
             startActivity(ps2);
         } else if (nama.equals("Jajar genjang")) {
-            Toast.makeText(getActivity(), "obj3", Toast.LENGTH_SHORT).show();
+            Intent ps3 = new Intent(getActivity(), persegipanjang.class);
+            startActivity(ps3);
         } else if (nama.equals("Persegi panjang")) {
             Toast.makeText(getActivity(), "obj4", Toast.LENGTH_SHORT).show();
         } else {
