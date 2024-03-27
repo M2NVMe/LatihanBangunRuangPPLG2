@@ -39,8 +39,8 @@ public class d2Fragment extends Fragment implements SelectListen {
         List<ItemsMe> shape = new ArrayList<>();
 
         shape.add( new ItemsMe("Persegi", R.drawable.baseline_crop_square_24));
-        shape.add( new ItemsMe("Segitiga", R.drawable.baseline_crop_square_24));
-        shape.add( new ItemsMe("Lingkaran", R.drawable.baseline_crop_square_24));
+        shape.add( new ItemsMe("Segitiga", R.drawable.triangle_24));
+        shape.add( new ItemsMe("Lingkaran", R.drawable.circle_24));
         shape.add( new ItemsMe("Persegi panjang", R.drawable.baseline_crop_square_24));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
