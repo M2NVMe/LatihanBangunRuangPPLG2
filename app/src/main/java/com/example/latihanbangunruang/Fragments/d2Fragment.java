@@ -49,5 +49,17 @@ public class d2Fragment extends Fragment implements SelectListen {
         String nama = holding.getNama();
         Toast.makeText(getActivity(), nama, Toast.LENGTH_SHORT).show();
 
+        if (nama == "Persegi") {
+            Toast.makeText(getActivity(), "obj1", Toast.LENGTH_SHORT).show();
+        } else if (nama == "Segitiga" ) {
+            Toast.makeText(getActivity(), "obj2", Toast.LENGTH_SHORT).show();
+        } else if (nama == "Jajar genjang") {
+            Toast.makeText(getActivity(), "obj3", Toast.LENGTH_SHORT).show();
+        } else if (nama == "Persegi panjang") {
+            Toast.makeText(getActivity(), "obj4", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getActivity(), "dni", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }
