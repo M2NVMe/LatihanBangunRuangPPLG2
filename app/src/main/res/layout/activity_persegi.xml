@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@id/warnaatas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Masukkan panjang sisi"
+        android:text="Masukkan data yang akan di hitung"
     />
     <EditText
         android:id="@+id/sisi"
