@@ -38,10 +38,11 @@ public class d2Fragment extends Fragment implements SelectListen {
         RecyclerView recyclerView = rootView.findViewById(R.id.recycl);
         List<ItemsMe> shape = new ArrayList<>();
 
-        shape.add( new ItemsMe("Persegi", R.drawable.baseline_crop_square_24));
-        shape.add( new ItemsMe("Segitiga", R.drawable.triangle_24));
-        shape.add( new ItemsMe("Lingkaran", R.drawable.circle_24));
-        shape.add( new ItemsMe("Persegi panjang", R.drawable.baseline_crop_square_24));
+        shape.add( new ItemsMe("Persegi", "S x S" ,R.drawable.baseline_crop_square_24));
+        shape.add( new ItemsMe("Segitiga", "1/2 x A x T" ,R.drawable.triangle_24));
+        shape.add( new ItemsMe("Lingkaran", "PI x r x r" ,R.drawable.circle_24));
+        shape.add( new ItemsMe("Persegi panjang", "P x L" ,R.drawable.baseline_crop_square_24));
+
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new adapter(getActivity(), shape, this));

@@ -4,35 +4,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/utama"
     android:layout_height="wrap_content">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/dg"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/round1"
-        android:orientation="horizontal"
-        android:layout_margin="8dp"
-        android:layout_height="wrap_content">
+        android:orientation="horizontal">
+
         <ImageView
-            android:layout_margin="10dp"
-            app:layout_constraintStart_toStartOf="@id/dg"
-            app:layout_constraintTop_toTopOf="@id/dg"
-            app:layout_constraintBottom_toBottomOf="@id/dg"
-            android:layout_height="80dp"
+            android:id="@+id/ImageVW"
             android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="12dp"
-            android:id="@+id/ImageVW"/>
+            app:layout_constraintBottom_toBottomOf="@id/dg"
+            app:layout_constraintStart_toStartOf="@id/dg"
+            app:layout_constraintTop_toTopOf="@id/dg" />
+
         <TextView
-            android:layout_marginLeft="30dp"
-            app:layout_constraintTop_toTopOf="@id/dg"
-            app:layout_constraintStart_toEndOf="@id/ImageVW"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="24dp"
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/name"
-            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="15dp"
+            android:text="name"
             android:textColor="@color/black"
-            android:text="name"/>
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/ImageVW"
+            app:layout_constraintTop_toTopOf="@id/dg" />
+
+        <TextView
+            android:id="@+id/rumus"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rumus"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/name" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

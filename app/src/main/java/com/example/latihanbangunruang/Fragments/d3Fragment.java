@@ -33,10 +33,10 @@ public class d3Fragment extends Fragment implements SelectListen {
         RecyclerView recyclerView = RootView.findViewById(R.id.recycl);
         List<ItemsMe> shape = new ArrayList<>();
 
-        shape.add( new ItemsMe("Kubus", R.drawable.cube));
-        shape.add( new ItemsMe("Limas", R.drawable.cube));
-        shape.add( new ItemsMe("Tabung", R.drawable.cube));
-        shape.add( new ItemsMe("Bola", R.drawable.cube));
+        shape.add( new ItemsMe("Kubus", "t" ,R.drawable.cube));
+        shape.add( new ItemsMe("Limas", "t" ,R.drawable.cube));
+        shape.add( new ItemsMe("Tabung", "t" ,R.drawable.cube));
+        shape.add( new ItemsMe("Bola", "t" ,R.drawable.cube));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new adapter(getActivity(), shape, this));

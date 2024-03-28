@@ -37,6 +37,7 @@ public class adapter extends RecyclerView.Adapter<vwhld> {
     @Override
     public void onBindViewHolder(@NonNull vwhld holder, @SuppressLint("RecyclerView") int position) {
         holder.name.setText(items.get(position).getNama());
+        holder.rumus.setText(items.get(position).getRumus());
         holder.ImVW.setImageResource(items.get(position).getImg());
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
