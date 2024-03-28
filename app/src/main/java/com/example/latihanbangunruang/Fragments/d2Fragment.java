@@ -54,20 +54,26 @@ public class d2Fragment extends Fragment implements SelectListen {
     public void OnKlik(ItemsMe holding) {
         String nama = holding.getNama();
 
-        if (nama.equals("Persegi")) {
-            Intent ps1 = new Intent(getActivity(), persegi.class);
-            startActivity(ps1);
-        } else if (nama.equals("Segitiga")) {
-            Intent ps2 = new Intent(getActivity(), segitiga.class);
-            startActivity(ps2);
-        } else if (nama.equals("Lingkaran")) {
-            Intent ps3 = new Intent(getActivity(), lingkaran.class);
-            startActivity(ps3);
-        } else if (nama.equals("Persegi panjang")) {
-            Intent ps4 = new Intent(getActivity(), persegipanjang.class);
-            startActivity(ps4);
-        } else {
-            Toast.makeText(getActivity(), "INVALID", Toast.LENGTH_SHORT).show();
+        switch (nama) {
+            case "Persegi":
+                Intent ps1 = new Intent(getActivity(), persegi.class);
+                startActivity(ps1);
+                break;
+            case "Segitiga":
+                Intent ps2 = new Intent(getActivity(), segitiga.class);
+                startActivity(ps2);
+                break;
+            case "Lingkaran":
+                Intent ps3 = new Intent(getActivity(), lingkaran.class);
+                startActivity(ps3);
+                break;
+            case "Persegi panjang":
+                Intent ps4 = new Intent(getActivity(), persegipanjang.class);
+                startActivity(ps4);
+                break;
+            default:
+                Toast.makeText(getActivity(), "INVALID", Toast.LENGTH_SHORT).show();
+                break;
         }
 
     }
