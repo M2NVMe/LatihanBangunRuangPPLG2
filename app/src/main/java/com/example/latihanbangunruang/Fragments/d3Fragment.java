@@ -47,5 +47,17 @@ public class d3Fragment extends Fragment implements SelectListen {
     public void OnKlik(ItemsMe holding) {
         String nama = holding.getNama();
         Toast.makeText(getActivity(), nama, Toast.LENGTH_SHORT).show();
+
+        if (nama.equals("Kubus")) {
+
+        } else if (nama.equals("Limas")) {
+
+        } else if (nama.equals("Tabung")) {
+
+        } else if (nama.equals("Bola")) {
+
+        } else {
+            Toast.makeText(getActivity(), "INVALID", Toast.LENGTH_SHORT).show();
+        }
     }
 }
