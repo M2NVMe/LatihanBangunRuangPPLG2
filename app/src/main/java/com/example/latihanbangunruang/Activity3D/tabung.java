@@ -31,8 +31,7 @@ public class tabung extends AppCompatActivity {
                 double hsl = 0;
                 float jr = Float.parseFloat(jari.getText().toString());
                 float tg = Float.parseFloat(tinggi.getText().toString());
-                double pi = 3.14;
-                hsl  = 2 * pi * jr * (jr + tg);
+                hsl  = 2 * Math.PI * jr * (jr + tg);
                 hasil.setText(String.valueOf(hsl));
             }
         });
