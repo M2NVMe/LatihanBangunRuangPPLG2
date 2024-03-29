@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.latihanbangunruang.Activity3D.balok;
 import com.example.latihanbangunruang.Activity3D.kubus;
 import com.example.latihanbangunruang.R;
 import com.example.latihanbangunruang.recycl.ItemsMe;
@@ -36,7 +37,7 @@ public class d3Fragment extends Fragment implements SelectListen {
         List<ItemsMe> shape = new ArrayList<>();
 
         shape.add( new ItemsMe("Kubus", "6 x (Sisi X Sisi)" ,R.drawable.cube));
-        shape.add( new ItemsMe("Limas", "t" ,R.drawable.cube));
+        shape.add( new ItemsMe("Balok", "2 x (pl + lt + pt)" ,R.drawable.cube));
         shape.add( new ItemsMe("Tabung", "t" ,R.drawable.cube));
         shape.add( new ItemsMe("Bola", "t" ,R.drawable.cube));
 
@@ -55,8 +56,9 @@ public class d3Fragment extends Fragment implements SelectListen {
                 Intent ps1 = new Intent(getActivity(), kubus.class);
                 startActivity(ps1);
                 break;
-            case "Limas":
-
+            case "Balok":
+                Intent ps2 = new Intent(getActivity(), balok.class);
+                startActivity(ps2);
                 break;
             case "Tabung":
 
