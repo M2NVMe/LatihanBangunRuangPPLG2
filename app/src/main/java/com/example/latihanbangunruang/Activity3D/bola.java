@@ -28,7 +28,8 @@ public class bola extends AppCompatActivity {
             public void onClick(View view) {
                 double hsl = 0;
                 float ss = Float.parseFloat(jari.getText().toString());
-                hsl  = 4 * Math.PI * (ss * ss);
+                double pi = 3.14;
+                hsl  = 4 * pi * (ss * ss);
                 hasil.setText(String.valueOf(hsl));
             }
         });
