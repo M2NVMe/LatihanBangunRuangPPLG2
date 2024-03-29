@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.latihanbangunruang.Activity3D.balok;
 import com.example.latihanbangunruang.Activity3D.kubus;
+import com.example.latihanbangunruang.Activity3D.tabung;
 import com.example.latihanbangunruang.R;
 import com.example.latihanbangunruang.recycl.ItemsMe;
 import com.example.latihanbangunruang.recycl.SelectListen;
@@ -61,7 +62,8 @@ public class d3Fragment extends Fragment implements SelectListen {
                 startActivity(ps2);
                 break;
             case "Tabung":
-
+                Intent ps3 = new Intent(getActivity(), tabung.class);
+                startActivity(ps3);
                 break;
             case "Bola":
 
