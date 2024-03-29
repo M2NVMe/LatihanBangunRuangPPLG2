@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.latihanbangunruang.Activity3D.balok;
+import com.example.latihanbangunruang.Activity3D.bola;
 import com.example.latihanbangunruang.Activity3D.kubus;
 import com.example.latihanbangunruang.Activity3D.tabung;
 import com.example.latihanbangunruang.R;
@@ -66,7 +67,8 @@ public class d3Fragment extends Fragment implements SelectListen {
                 startActivity(ps3);
                 break;
             case "Bola":
-
+                Intent ps4 = new Intent(getActivity(), bola.class);
+                startActivity(ps4);
                 break;
             default:
                 Toast.makeText(getActivity(), "INVALID", Toast.LENGTH_SHORT).show();
