@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#B3B3B3"
+        android:background="#48DCDCDC"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="User Email: m2sjmail@gmail.com"
+            android:textColor="@color/black"
             />
             />
         <TextView
@@ -37,12 +38,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="User Password: Bagus"
+            android:textColor="@color/black"
             />
     </LinearLayout>
 
     <Button
         android:id="@+id/Logut"
-        android:backgroundTint="#EA2517"
+        android:backgroundTint="#000000"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

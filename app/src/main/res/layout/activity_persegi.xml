@@ -51,6 +51,7 @@
         android:layout_marginHorizontal="40dp"
         />
     <Button
+        android:backgroundTint="#3E3E3E"
         android:id="@+id/calc"
         android:layout_width="wrap_content"
         android:text="Hitung"
@@ -73,6 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
     <Button
+        android:backgroundTint="#3E3E3E"
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
