@@ -41,7 +41,28 @@
             android:textColor="@color/black"
             />
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/qrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User QR"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/Framing1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+    <ImageView
+        android:id="@+id/lmao"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/qro"
+        app:layout_constraintTop_toBottomOf="@id/qrs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Logut"
+        />
     <Button
         android:id="@+id/Logut"
         android:backgroundTint="#000000"
