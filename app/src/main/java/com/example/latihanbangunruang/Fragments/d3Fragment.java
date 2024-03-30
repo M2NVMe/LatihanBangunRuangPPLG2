@@ -40,8 +40,8 @@ public class d3Fragment extends Fragment implements SelectListen {
 
         shape.add( new ItemsMe("Kubus", "6 x (S X S)" ,R.drawable.cube));
         shape.add( new ItemsMe("Balok", "2 x (PL + LT + PT)" ,R.drawable.cube));
-        shape.add( new ItemsMe("Tabung", "2 x Pi x R x (R + T)" ,R.drawable.cube));
-        shape.add( new ItemsMe("Bola", "4 x Pi x R x R" ,R.drawable.cube));
+        shape.add( new ItemsMe("Tabung", "2 x Pi x R x (R + T)" ,R.drawable.cylinder));
+        shape.add( new ItemsMe("Bola", "4 x Pi x R x R" ,R.drawable.ball));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new adapter(getActivity(), shape, this));
@@ -51,7 +51,6 @@ public class d3Fragment extends Fragment implements SelectListen {
     @Override
     public void OnKlik(ItemsMe holding) {
         String nama = holding.getNama();
-        Toast.makeText(getActivity(), nama, Toast.LENGTH_SHORT).show();
 
         switch (nama) {
             case "Kubus":
