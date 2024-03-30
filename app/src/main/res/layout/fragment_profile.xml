@@ -21,7 +21,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
             android:layout_width="80dp"
-            android:src="@drawable/baseline_person_24"
+            android:src="@drawable/ball"
             android:layout_height="80dp"
             />
         <TextView
@@ -50,13 +50,13 @@
         app:layout_constraintTop_toBottomOf="@id/Framing1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="@color/black"
         />
     <ImageView
         android:id="@+id/lmao"
         android:layout_width="240dp"
-        android:layout_height="240dp"
+        android:layout_height="100dp"
         android:src="@drawable/qro"
         app:layout_constraintTop_toBottomOf="@id/qrs"
         app:layout_constraintStart_toStartOf="parent"
