@@ -25,21 +25,13 @@ public class segitiga extends AppCompatActivity {
         hasil = findViewById(R.id.hasil);
         bak = findViewById(R.id.back);
 
-        calk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                double result = 0;
-                float al = Float.parseFloat(alas.getText().toString());
-                float tg = Float.parseFloat(tinggi.getText().toString());
-                result  = 0.5 * al * tg;
-                hasil.setText(String.valueOf(result));
-            }
+        calk.setOnClickListener(view -> {
+            double result = 0;
+            float al = Float.parseFloat(alas.getText().toString());
+            float tg = Float.parseFloat(tinggi.getText().toString());
+            result  = 0.5 * al * tg;
+            hasil.setText(String.valueOf(result));
         });
-        bak.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        bak.setOnClickListener(view -> finish());
     }
 }

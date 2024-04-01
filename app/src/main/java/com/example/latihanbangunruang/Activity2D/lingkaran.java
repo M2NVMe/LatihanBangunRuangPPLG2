@@ -23,20 +23,12 @@ public class lingkaran extends AppCompatActivity {
         hasil = findViewById(R.id.hasil);
         bak = findViewById(R.id.back);
 
-        calk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                double result = 0;
-                float jr = Float.parseFloat(jari.getText().toString());
-                result  = 3.14 * jr * jr;
-                hasil.setText(String.valueOf(result));
-            }
+        calk.setOnClickListener(view -> {
+            double result = 0;
+            float jr = Float.parseFloat(jari.getText().toString());
+            result  = 3.14 * jr * jr;
+            hasil.setText(String.valueOf(result));
         });
-        bak.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        bak.setOnClickListener(view -> finish());
     }
 }

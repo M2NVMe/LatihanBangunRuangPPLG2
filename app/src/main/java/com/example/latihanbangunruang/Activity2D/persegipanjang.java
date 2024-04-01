@@ -25,21 +25,13 @@ public class persegipanjang extends AppCompatActivity {
         hasil = findViewById(R.id.hasil);
         bak = findViewById(R.id.back);
 
-        calk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                double result = 0;
-                float pj = Float.parseFloat(panjang.getText().toString());
-                float lb = Float.parseFloat(lebar.getText().toString());
-                result  = pj * lb;
-                hasil.setText(String.valueOf(result));
-            }
+        calk.setOnClickListener(view -> {
+            double result = 0;
+            float pj = Float.parseFloat(panjang.getText().toString());
+            float lb = Float.parseFloat(lebar.getText().toString());
+            result  = pj * lb;
+            hasil.setText(String.valueOf(result));
         });
-        bak.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        bak.setOnClickListener(view -> finish());
     }
 }

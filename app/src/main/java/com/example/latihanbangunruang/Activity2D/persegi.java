@@ -24,20 +24,12 @@ public class persegi extends AppCompatActivity {
         hasil = findViewById(R.id.hasil);
         bak = findViewById(R.id.back);
 
-        calk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                float result = 0;
-                float ss = Float.parseFloat(sisi.getText().toString());
-                result  = ss * ss;
-                hasil.setText(String.valueOf(result));
-            }
+        calk.setOnClickListener(view -> {
+            float result = 0;
+            float ss = Float.parseFloat(sisi.getText().toString());
+            result  = ss * ss;
+            hasil.setText(String.valueOf(result));
         });
-        bak.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        bak.setOnClickListener(view -> finish());
     }
 }
