@@ -28,11 +28,11 @@ public class segitiga extends AppCompatActivity {
         calk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double hsl = 0;
+                double result = 0;
                 float al = Float.parseFloat(alas.getText().toString());
                 float tg = Float.parseFloat(tinggi.getText().toString());
-                hsl  = 0.5 * al * tg;
-                hasil.setText(String.valueOf(hsl));
+                result  = 0.5 * al * tg;
+                hasil.setText(String.valueOf(result));
             }
         });
         bak.setOnClickListener(new View.OnClickListener() {

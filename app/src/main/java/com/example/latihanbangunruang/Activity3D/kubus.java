@@ -26,10 +26,10 @@ public class kubus extends AppCompatActivity {
         calk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float hsl = 0;
+                float result = 0;
                 float ss = Float.parseFloat(sisi.getText().toString());
-                hsl  = 6 * (ss * ss);
-                hasil.setText(String.valueOf(hsl));
+                result  = 6 * (ss * ss);
+                hasil.setText(String.valueOf(result));
             }
         });
         bak.setOnClickListener(new View.OnClickListener() {

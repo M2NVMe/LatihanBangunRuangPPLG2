@@ -28,12 +28,12 @@ public class tabung extends AppCompatActivity {
         calk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double hsl = 0;
+                double result = 0;
                 float jr = Float.parseFloat(jari.getText().toString());
                 float tg = Float.parseFloat(tinggi.getText().toString());
                 double pi = 3.14;
-                hsl  = 2 * pi * jr * (jr + tg);
-                hasil.setText(String.valueOf(hsl));
+                result  = 2 * pi * jr * (jr + tg);
+                hasil.setText(String.valueOf(result));
             }
         });
         bak.setOnClickListener(new View.OnClickListener() {

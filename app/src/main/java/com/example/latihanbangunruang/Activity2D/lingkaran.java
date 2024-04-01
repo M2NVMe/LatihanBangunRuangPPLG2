@@ -26,10 +26,10 @@ public class lingkaran extends AppCompatActivity {
         calk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double hsl = 0;
+                double result = 0;
                 float jr = Float.parseFloat(jari.getText().toString());
-                hsl  = 3.14 * jr * jr;
-                hasil.setText(String.valueOf(hsl));
+                result  = 3.14 * jr * jr;
+                hasil.setText(String.valueOf(result));
             }
         });
         bak.setOnClickListener(new View.OnClickListener() {

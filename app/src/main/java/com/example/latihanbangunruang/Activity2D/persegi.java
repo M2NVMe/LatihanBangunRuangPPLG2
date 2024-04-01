@@ -27,10 +27,10 @@ public class persegi extends AppCompatActivity {
         calk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float hsl = 0;
+                float result = 0;
                 float ss = Float.parseFloat(sisi.getText().toString());
-                hsl  = ss * ss;
-                hasil.setText(String.valueOf(hsl));
+                result  = ss * ss;
+                hasil.setText(String.valueOf(result));
             }
         });
         bak.setOnClickListener(new View.OnClickListener() {

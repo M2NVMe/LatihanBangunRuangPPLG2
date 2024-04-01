@@ -26,11 +26,11 @@ public class bola extends AppCompatActivity {
         calk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double hsl = 0;
-                float ss = Float.parseFloat(jari.getText().toString());
+                double result = 0;
+                float jr = Float.parseFloat(jari.getText().toString());
                 double pi = 3.14;
-                hsl  = 4 * pi * (ss * ss);
-                hasil.setText(String.valueOf(hsl));
+                result  = 4 * pi * (jr * jr);
+                hasil.setText(String.valueOf(result));
             }
         });
         bak.setOnClickListener(new View.OnClickListener() {
