@@ -21,7 +21,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
             android:layout_width="100dp"
-            android:src="@drawable/pfp"
+            android:src="@drawable/head"
             android:layout_height="100dp"
             />
         <TextView
