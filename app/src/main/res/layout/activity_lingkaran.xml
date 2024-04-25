@@ -39,6 +39,7 @@
         android:text="Masukkan data yang akan di hitung"
         />
     <EditText
+        android:inputType="number"
         android:id="@+id/jari"
         android:hint="masukkan panjang jari-jari"
         android:layout_width="match_parent"
