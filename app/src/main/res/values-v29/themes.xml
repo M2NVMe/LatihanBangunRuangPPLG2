@@ -1,10 +1,8 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
     <style name="Base.Theme.LatihanBangunRuang" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:forceDarkAllowed">false</item>
     </style>
-
-    <style name="Theme.LatihanBangunRuang" parent="Base.Theme.LatihanBangunRuang" />
 </resources>
