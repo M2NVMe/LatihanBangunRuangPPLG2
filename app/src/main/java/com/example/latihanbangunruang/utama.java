@@ -20,23 +20,31 @@ public class utama extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityUtamaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         replaceFragment(new d2Fragment());
-        binding.bottomNavigationView.setOnItemReselectedListener(item -> {
+
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.d2) {
                 replaceFragment(new d2Fragment());
+                return true;
             } else if (itemId == R.id.d3) {
                 replaceFragment(new d3Fragment());
+                return true;
             } else if (itemId == R.id.prof) {
                 replaceFragment(new ProfileFragment());
+                return true;
             }
+            return false;
         });
 
     }
+
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame,fragment);
+        fragmentTransaction.replace(R.id.frame, fragment);
         fragmentTransaction.commit();
     }
+
 }
