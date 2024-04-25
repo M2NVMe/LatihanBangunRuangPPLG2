@@ -39,6 +39,8 @@
         android:text="Masukkan data yang akan di hitung"
         />
     <EditText
+        android:padding="10dp"
+        android:background="@drawable/round1"
         android:inputType="number"
         android:id="@+id/alas"
         android:hint="masukkan alas"
@@ -51,6 +53,8 @@
         android:layout_marginHorizontal="40dp"
         />
     <EditText
+        android:padding="10dp"
+        android:background="@drawable/round1"
         android:inputType="number"
         android:id="@+id/tinggi"
         android:hint="masukkan tinggi"
@@ -74,6 +78,7 @@
         android:layout_marginTop="30dp"
         />
     <TextView
+
         android:id="@+id/hasil"
         android:layout_marginTop="20dp"
         android:textSize="20dp"

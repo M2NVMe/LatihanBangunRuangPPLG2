@@ -39,6 +39,8 @@
         android:text="Masukkan data yang akan di hitung"
         />
     <EditText
+        android:padding="10dp"
+        android:background="@drawable/round1"
         android:inputType="number"
         android:id="@+id/jari"
         android:hint="masukkan panjang jari-jari"

@@ -39,6 +39,8 @@
         android:text="Masukkan data yang akan di hitung"
         />
     <EditText
+        android:padding="10dp"
+        android:background="@drawable/round1"
         android:inputType="number"
         android:id="@+id/jari"
         android:hint="masukkan jari jari"
@@ -51,6 +53,8 @@
         android:layout_marginHorizontal="40dp"
         />
     <EditText
+        android:padding="10dp"
+        android:background="@drawable/round1"
         android:inputType="number"
         android:id="@+id/tinggi"
         android:hint="masukkan tinggi"
