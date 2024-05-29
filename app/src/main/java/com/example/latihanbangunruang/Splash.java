@@ -17,7 +17,6 @@ public class Splash extends AppCompatActivity {
     private static int TIMEOUT = 2000;
     private static final String SharedPref = "mypref";
     private static final String usernm = "name";
-    private static final String PWs = "paswod";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +42,7 @@ public class Splash extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }
-            }, TIMEOUT);
+            }, 150);
         }
     }
 }
