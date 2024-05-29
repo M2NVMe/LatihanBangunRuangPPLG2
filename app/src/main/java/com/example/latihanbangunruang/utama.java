@@ -20,7 +20,6 @@ public class utama extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityUtamaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         replaceFragment(new d2Fragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {

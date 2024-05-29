@@ -28,10 +28,6 @@ public class MainActivity extends AppCompatActivity {
         Login = findViewById(R.id.btnLGN);
         sharedPreferences = getSharedPreferences(SharedPref,MODE_PRIVATE);
         String nama = sharedPreferences.getString(usernm,null);
-        if (nama != null) {
-            Intent sukses = new Intent(MainActivity.this,utama.class);
-            startActivity(sukses);
-        }
 
         Login.setOnClickListener(new View.OnClickListener() {
             String Nama = "m2sjmail@gmail.com";
